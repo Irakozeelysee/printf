@@ -2,7 +2,7 @@
 #define MAIN_H
 #include <stdarg.h>
 #include <stdio.h>
-#include <unistdh>
+#include <unistd.h>
 
 #define UNUSED(x) (void)(x)
 #define BUFF_SIZE 1024
@@ -103,7 +103,7 @@ int write_number(int is_positive, int ind, char buffer[],
 int write_num(int ind, char bff[], int flags, int width, int precision,
 			int length, char padd, char extra_c);
 int write_pointer(char buffer[], int ind, int length,
-			int width, int flags, char padd, char extra_c, int padd_start);
+		int padd_start, char padd_char);
 
 int write_unsgnd(int is_negative, int ind,
 		char buffer[],

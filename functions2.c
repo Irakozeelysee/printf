@@ -40,8 +40,8 @@ int print_pointer(va_list types, char buffer[],
 	else if (flags & F_SPACE)
 		extra_c = ' ', length++;
 	ind++;
-	return (write(1, &buffer[i], BUFF_SIZE - i - 1));
-	return (write_pointer(buffer, ind, length, width, flags, padd, extra_c, padd_start));
+	/*return (write(1, &buffer[i], BUFF_SIZE - i - 1));*/
+	return (write_pointer(buffer,ind,length,width,flags,padd,extra_c,padd_start));
 }
 
 /************************* PRINT NON PRINTABLE *************************/

@@ -1,12 +1,8 @@
 #ifndef MAIN_H
 #define MAIN_H
+#include <stdarg.h>
 #include <stdio.h>
 #include <unistd.h>
-<<<<<<< HEAD
-#include <limits.h>
-#include <stdarg.h>
-#include <stdlib.h>
-=======
 
 #define UNUSED(x) (void)(x)
 #define BUFF_SIZE 1024
@@ -120,9 +116,6 @@ int is_digit(char);
 
 long int convert_size_number(long int num, int size);
 long int convert_size_unsgnd(unsigned long int num, int size);
->>>>>>> 1a75297c1c06178c6b544feef3f8fab92f5c5d99
 
-int _putchar(char c);
-int baseof2(va_list va);
+#endif /* MAIN_H */
 
-#endif

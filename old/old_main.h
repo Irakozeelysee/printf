@@ -1,12 +1,8 @@
 #ifndef MAIN_H
 #define MAIN_H
-#include <stdio.h>
-#include <unistd.h>
-<<<<<<< HEAD
-#include <limits.h>
 #include <stdarg.h>
-#include <stdlib.h>
-=======
+#include <stdio.h>
+#include <unistdh>
 
 #define UNUSED(x) (void)(x)
 #define BUFF_SIZE 1024
@@ -107,7 +103,7 @@ int write_number(int is_positive, int ind, char buffer[],
 int write_num(int ind, char bff[], int flags, int width, int precision,
 			int length, char padd, char extra_c);
 int write_pointer(char buffer[], int ind, int length,
-		int padd_start, char padd_char);
+			int width, int flags, char padd, char extra_c, int padd_start);
 
 int write_unsgnd(int is_negative, int ind,
 		char buffer[],
@@ -120,9 +116,6 @@ int is_digit(char);
 
 long int convert_size_number(long int num, int size);
 long int convert_size_unsgnd(unsigned long int num, int size);
->>>>>>> 1a75297c1c06178c6b544feef3f8fab92f5c5d99
 
-int _putchar(char c);
-int baseof2(va_list va);
+#endif /* MAIN_H */
 
-#endif
